@@ -11,7 +11,6 @@ namespace OOPClub
         public static List<Member> members = new List<Member>();
         static void Main(string[] args)
         {
-
             bool end = false;
 
             while (!end)
