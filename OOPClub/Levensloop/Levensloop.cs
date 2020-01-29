@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPClub
+namespace Levenswerk
 {
-    public enum AgeCategories
-    {
-        Kind,
-        Adolecent,
-        Jongere,
-        Volwassene,
-        Undefined
-    }
+
     public static class Levensloop
     {
+        public enum AgeCategories
+        {
+            Kind,
+            Adolecent,
+            Jongere,
+            Volwassene,
+            Undefined
+        }
         public static int Age(DateTime dob)
         {
             int age = DateTime.Today.Year - dob.Year;

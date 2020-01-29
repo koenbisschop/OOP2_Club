@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Levenswerk;
 
 namespace OOPClub
 {
@@ -35,7 +36,7 @@ namespace OOPClub
             }
         }
 
-        public AgeCategories AgeCategory
+        public  Levensloop.AgeCategories AgeCategory
         {
             get
             {
@@ -54,13 +55,13 @@ namespace OOPClub
             {
                 decimal price = 0M;
 
-                if (AgeCategory == AgeCategories.Kind)
+                if (AgeCategory == Levensloop.AgeCategories.Kind)
                     price = 0M;
-                if (AgeCategory == AgeCategories.Adolecent)
+                if (AgeCategory == Levensloop.AgeCategories.Adolecent)
                     price = 10M;
-                if (AgeCategory == AgeCategories.Jongere)
+                if (AgeCategory == Levensloop.AgeCategories.Jongere)
                     price = 15M;
-                if (AgeCategory == AgeCategories.Volwassene)
+                if (AgeCategory == Levensloop.AgeCategories.Volwassene)
                     price = 21M;
 
                 return price;
